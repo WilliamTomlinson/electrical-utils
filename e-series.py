@@ -12,3 +12,16 @@ E24 = np.array([1.00, 1.05, 1.10, 1.15, 1.21, 1.27,
         7.50, 7.87, 8.25, 8.66, 9.09, 9.53])
         
 E_SERIES = [E3, E6, E12, E24]
+
+def query_interpretter(number):
+    """
+    Returns the index in E_SERIES that corresponds with the number given.
+    """
+    if number == 3:
+        return 0
+    elif number == 6:
+        return 1
+    elif number == 12:
+        return 2;
+    elif number == 24:
+        return 3
