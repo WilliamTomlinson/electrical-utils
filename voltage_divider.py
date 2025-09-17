@@ -23,6 +23,9 @@ def volt_div_approx(e_series, v_in, v_out):
     return r_pair
 
 def get_volt_div():
+    """
+    Prompts input to interact with volt_div_approx()
+    """
     series = input("What E-Series should be used? ")
     series_index = query_interpretter(series);
     v_in = input("What is the input voltage? ")
